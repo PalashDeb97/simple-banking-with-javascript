@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Banking</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl font-bold text-center mt-20 uppercase">
+        Let's get some <span class="text-yellow-400">Moooooney !!</span>
+      </h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+      <section>
+        <div class="grid grid-cols-3 text-white gap-4 mt-10">
+          <div class="bg-blue-300 p-8 rounded">
+            <h1 class="text-2xl">Deposit</h1>
+            <h1 class="text-2xl">$<span id="deposit-total">00</span></h1>
+          </div>
+          <div class="bg-yellow-300 p-8 rounded">
+            <h1 class="text-2xl">Withdraw</h1>
+            <h1 class="text-2xl">$<span id="withdraw-total">00</span></h1>
+          </div>
+          <div class="bg-green-300 p-8 rounded">
+            <h1 class="text-2xl">Balance</h1>
+            <h1 class="text-2xl">$<span id="balance-total">1200</span></h1>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="grid grid-cols-2 text-white gap-4 mt-8">
+          <div class="bg-purple-500 p-8 rounded">
+            <h1 class="text-2xl text-center">Please Deposit</h1>
+            <input
+              id="deposit-input"
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mt-3"
+              id="username"
+              type="text"
+              placeholder="$ Your amount you want to Deposit"
+            />
+            <button
+              id="deposit-btn"
+              class="mt-4 bg-yellow-400 hover:bg-black text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="button"
+            >
+              Deposit
+            </button>
+          </div>
+          <div class="bg-teal-500 p-8 rounded">
+            <h1 class="text-2xl text-center">Please Withdraw</h1>
+            <input
+              id="withdraw-input"
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mt-3"
+              id="username"
+              type="text"
+              placeholder="$ Your amount you want to Withdraw"
+            />
+            <button
+              id="withdraw-btn"
+              class="mt-4 bg-yellow-400 hover:bg-black text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="button"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./banking.js"></script>
+  </body>
+</html>
